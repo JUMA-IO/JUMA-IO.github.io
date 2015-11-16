@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>环境温湿度模块</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>  
+	.col-center-block {  
+	    float: none;  
+	    display: block;  
+	    margin-left: auto;  
+	    margin-right: auto;  
+	}  
+	</style>  	
+</head>
+
+
+<body>
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a href="./index.html">
+		<h4 class="text-center">JUMA技术架构</h4>
+	</a>
+  </div>
+<!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="#section1">What</a></li>
+      <li><a href="#section2">When</a></li>
+    </ul>
+  </div>-->
+</nav>
+
+
+<section class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+		<div>
+			<h3>环境温湿度模块</h3>
+			<hr />
+			
+			<h4 id="方案概述">方案概述</h4>
+			<p>环境温湿度模块，基于Nordic nRF51822芯片，采集并储存当前环境下的温度和湿度。该方案采用低功耗蓝牙通信技术，最终将数据上传至手机或者其他移动设备(支持蓝牙4.0)。</p>
+			<hr />
+			
+			<h4 id="功能列表">功能列表</h4>
+			<ul>
+				<li>APP支持Android和iOS</li>
+				<li>设备可以采集温湿度，采样周期可以适配</li>
+				<li>设备可以储存温湿度，储存1024个数据样本</li>
+			</ul>
+			<hr />
+			
+			<h4 id="工作原理">工作原理</h4>
+			<div class="figure">
+			<img src="./images/environment.png" class="img-responsive center-block ">
+			</div>
+			<hr />
+			
+			<h4 id="效果演示">效果演示</h4>
+			<p>以温度为例，展示设备采集-储存环境温度，并通过蓝牙，上传至手机APP。</p>
+			<iframe height=498 width=510 src="http://player.youku.com/embed/XMTM4NTE0MTk4MA==" frameborder=0 allowfullscreen></iframe>
+
+		</div>
+
+      </div>
+    </div>
+    
+
+    
+
+
+
+      </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
