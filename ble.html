@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>蓝牙4.0通信技术</title>
+	<title>低功耗蓝牙·浪潮已起 远未及巅</title>
 	<meta name="generator" content="Bootply" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
   <div class="container">
 	<a href="./index.html">
-		<h4 class="text-center">JUMA技术架构</h4>
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
 	</a>
   </div>
 <!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
@@ -44,46 +44,59 @@
       <div class="col-sm-8 col-sm-offset-2">
 
 		<div>
-			<h3>蓝牙4.0通信技术</h3>
+			<h3>低功耗蓝牙 · 浪潮已起 远未及巅</h3>
 			<hr />
 			
-			<h4 id="方案概述">概述</h4>
+			
+			<h4>背景介绍</h4>
+			<p>现在一样东西能称得上智能硬件，它得有一个前提条件：能和手机通信。我们考虑物联网的几大热门无线通信技术：</p>
+			<ul>
+				<li>蓝牙：低成本、低功耗，手机直接支持；</li>			
+				<li>WiFi：使用广泛、功耗略高，需要借助路由器上网，手机和WiFi设备通过英特网来通信；</li>
+				<li>Zigbee：成本略高，需要借助网关上网，手机和WiFi设备通过英特网来通信；</li>
+			</ul>
+
+			<p>得益于手机的直接支持，蓝牙设备可以无需借助外力就和手机通信，这让蓝牙技术在无线个人局域网(WPAN, Wireless Personal Area Network Communication)中得以广泛使用。近些年来，比较火热的可穿戴、智能家居、车载设备等领域也随处可见蓝牙技术的影子。</p>
 			<p>蓝牙技术联盟(Bluetooth SIG)在2012年推出了蓝牙4.0技术规范，它包含了三个方面：</p>
-			<img src="./images/bt4.png" class="img-responsive center-block ">
+			<img src="./images/ble1.jpg" class="img-responsive center-block ">
+			<br />
+						
 			<ul>
 			<li>传统蓝牙(Bluetooth)：适用于传输音频、音乐、文件等数据的场合。</li>
-			<li>低功耗蓝牙(Bluetooth Smart)：适用于小数据量传输但对功耗又敏感的场合，低功耗蓝牙又称之为Bluetooth Low Energy(BLE)。</li>
+			<li>低功耗蓝牙(Bluetooth Smart)：适用于小数据量传输，但对功耗又敏感的场合，低功耗蓝牙又称之为Bluetooth Low Energy(BLE)。</li>
 			<li>双模蓝牙(Bluetooth Smart Ready)：双模蓝牙是兼容传统蓝牙和低功耗蓝牙两种技术指标的规范，如手机和电脑就属于双模蓝牙设备。</li>
-			</ul>			
+			</ul>				
+	
 			<hr />
-			
+
 			<h4 id="功能列表">低功耗蓝牙技术</h4>
-<p>低功耗蓝牙技术是自蓝牙4.0起的蓝牙核心规范的组成部分。蓝牙低功耗使得蓝牙无线连接成为低成本、低容量电池即可操作需要数月甚至数年电池寿命的设备。蓝牙低功耗因而可使大量新的扩展应用能够从蓝牙无线技术中获益，包括手表、防盗钥匙扣、运动和健身传感器、医疗保健传感器和遥控器。</p>
-
-<p>低功耗蓝牙的主要特点包括：</p>
-<ul>
-<li>超低峰、平均和空闲模式功耗</li>
-<li>可使用标准纽扣电池工作多年</li>
-<li>低成本</li>
-<li>协议简单，适用于小数据量传输</li>
-<li>多平台支持，如iOS和Android移动平台，以及包括OSX、Windows 8和Linux在内的大多数桌面平台</li>
-</ul>
+			<p>低功耗蓝牙技术是自蓝牙4.0起的核心规范的组成部分，它是目前热门的物联网无线通信技术之一，其主要特点包括：</p>
+			<ul>
+			<li>超低峰、平均和空闲模式功耗；</li>
+			<li>使用标准纽扣电池工作多年；</li>
+			<li>较低的物料成本；</li>
+			<li>协议简单，适用于小数据量传输；</li>
+			<li>多平台支持，如iOS和Android移动平台，以及OSX、Windows和Linux在内的大多数桌面平台；</li>
+			</ul>
+			<hr />
+					
+			
+			
+			<h4 id="工作原理">JUMA的蓝牙技术服务</h4>
+			<p>JUMA由多名蓝牙专家组成，它的使命是为客户提供专业的蓝牙技术服务，帮助客户以最优的方案将产品推出到市场，服务内容包括：</p>
+			<ul>
+			<li>软件开发框架(SDK)：通过SDK把低功耗蓝牙开发门槛降到最低。SDK由嵌入式端和移动端两部分组成，其中嵌入式端支持Nordic、ST、Amiccom等主流BLE芯片。</li>
+			<li>硬件开发平台：推出NOVA、SMP、Cannon等开发平台。客户依据不同的应用场景，选择合适的硬件平台，开发自己的产品。</li>
+			<li>快速原型开发服务：基于SDK和硬件开发平台，JUMA根据客户需要实现产品原型，帮助客户快速验证方案和演示方案。</li>
+			<li>技术咨询和支持服务：基于多年在蓝牙领域的实践经验，JUMA帮助客户解决蓝牙开发过程中的各类技术问题，如：芯片选型、功耗优化、传输速率、连接稳定性等等。</li>
+			</ul>
+			<img src="./images/ble2.jpg" class="img-responsive center-block ">						
+			<hr />	
+			
+			<h4>技术服务咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
 			<hr />
 			
-			<h4 id="工作原理">JUMA的IP和服务</h4>
-
-<p>低功耗蓝牙技术的IP和服务包括：</p>
-<ul>
-<li>软件开发框架(SDK)：通过SDK把低功耗蓝牙开发门槛降到最低。SDK由嵌入式端和移动端两部分组成，其中嵌入式端支持Nordic、ST、Amiccom等主流BLE芯片。</li>
-<li>硬件开发平台：推出NOVA、SMP、Cannon等开发平台。客户依据不同的应用场景，选择合适的硬件平台，开发自己的产品。</li>
-<li>快速原型开发服务：基于SDK和硬件开发平台，JUMA根据客户需要实现产品原型，帮助客户快速验证方案和演示方案。</li>
-<li>技术咨询和支持服务：基于多年在蓝牙领域的实践经验，JUMA帮助客户解决蓝牙开发过程中的各类技术问题，如：芯片选型、功耗优化、传输速率、连接稳定性等等。</li>
-<li>精简BLE协议栈：JUMA开发的精简低功耗蓝牙协议栈，占据大约25KB的Flash空间，适合对系统资源要求很低的应用场合。</li>
-</ul>
-<img src="./images/juma_sdk.png" class="img-responsive center-block ">						
-			<hr />
-			
-
 		</div>
 
       </div>

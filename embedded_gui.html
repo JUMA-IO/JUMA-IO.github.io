@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>一种非常精简的嵌入式图形库（GUI Lib）</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>  
+	.col-center-block {  
+	    float: none;  
+	    display: block;  
+	    margin-left: auto;  
+	    margin-right: auto;  
+	}  
+	</style>  	
+</head>
+
+
+<body>
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a href="./index.html">
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
+	</a>
+  </div>
+<!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="#section1">What</a></li>
+      <li><a href="#section2">When</a></li>
+    </ul>
+  </div>-->
+</nav>
+
+
+<section class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+		<div>
+			<h3>一种非常精简的嵌入式图形库（GUI Lib）</h3>
+			<hr />
+			
+			
+			<h4>方案概述</h4>
+			<p>随着显示技术的发展，越来越多的数码产品中加入了电子显示屏来起到更为丰富的人机交互效果，例如，心率血压计、电子秤、电子标签、智能手环、蓝牙耳机等：</p>
+
+			<img src="./images/gui1.jpg" class="img-responsive center-block ">
+			<br />
+			
+			<p>但是，不知道大家有没有留意，这些数码产品显示的内容比较单一。从技术实现角度来说，出于对成本及功耗的考虑，这些数码产品往往使用低性能的单片机(MCU)和较少的存储资源，这使得开发人员很难自由地、灵活地绘制自己所需要图案。而在那些高性能的处理器上，如手机、PDA等，由于支持了各类强大图形用户界面（Graphical User Interface，简称 GUI），开发人员绘制出酷炫图案就变得轻而易举。</p>
+			
+			<p>为此，JUMA针对嵌入式系统开发了一套简易的图形库，它占用很少的资源，可以跑在低成本单片机上，其架构如下：</p>
+			<img src="./images/gui2.jpg" class="img-responsive center-block ">
+			<br />
+						
+			<p>使用该嵌入式图形库流程如下：</p>
+			<ul>
+			<li>1. 开辟内存用于存放显示内容；</li>
+			<li>2. 调用GUI Lib的API绘制图案；</li>			
+			<li>3. 通过驱动程序将图案显示在屏幕上；</li>
+			<li>4. 清理内存；</li>									
+			</ul>			
+			
+			<p>目前，嵌入式图形库支持点、线、圆形、矩形、文字的绘制，这里列出部分API，详情请查阅<a href="http://www.juma.io/doc/zh/embedded_sdk/api/gfx.html">JUMA SDK</a>：</p>
+			<ul>
+			<li>gfx_init_screen - 初始化</li>
+			<li>gfx_clear - 清除显示区域</li>
+			<li>gfx_draw_circle - 绘制圆形框</li>
+			<li>gfx_draw_rect - 绘制矩形框</li>
+			<li>gfx_fill_circle - 绘制圆形区域</li>
+			<li>gfx_fill_rect - 绘制矩形区域</li>
+			<li>gfx_draw_image - 绘制指定图片</li>
+			<li>gfx_draw_line - 绘制线段</li>
+			<li>gfx_draw_pixel - 绘制像素点</li>
+			<li>gfx_set_font - 设定字体</li>
+			<li>gfx_draw_char - 绘制字符</li>
+			<li>gfx_draw_string - 绘制字符串</li>
+			</ul>						
+			<hr />
+
+			<h4>效果演示</h4>					
+			<p>显示“波纹”图案：</p>
+			<img src="./images/gui4.jpg" class="img-responsive center-block ">
+			<br />
+			
+			<p>显示“文字”图案：</p>
+			<img src="./images/gui5.jpg" class="img-responsive center-block ">
+			<br />
+			
+			<p>支持手机APP通过蓝牙传输图案，并在单片机内存中一次性设置图像帧：</p>
+			<img src="./images/gui3.jpg" class="img-responsive center-block ">
+			<br />			
+			<hr />			
+			
+			<h4>技术指标</h4>			
+			<p>系统要求</p>			
+			<ul>
+			<li>ROM: 5KB；</li>
+			<li>RAM: 128B；</li>
+			<li>MCU: ARM Cortex-M系列；</li>					
+			<li>依赖: Library C；</li>								
+			</ul>
+			<hr />
+			
+						
+			<h4>服务内容</h4>		
+			<p>软件</p>
+			<ul>
+			<li>JUMA SDK；</li>					
+			<li>Demo案例和说明；</li>	
+			<li>蓝牙绘图助手(可选)；</li>	
+			</ul>					
+			<hr />		
+			
+			<h4>方案咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
+			<hr />
+			
+		</div>
+
+      </div>
+    </div>
+    
+
+    
+
+
+
+      </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- script references -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

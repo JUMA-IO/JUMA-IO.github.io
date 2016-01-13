@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>接口和网关技术</title>
+	<title>网关，让蓝牙拥入互联网的怀抱</title>
 	<meta name="generator" content="Bootply" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
   <div class="container">
 	<a href="./index.html">
-		<h4 class="text-center">JUMA技术架构</h4>
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
 	</a>
   </div>
 <!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
@@ -44,25 +44,55 @@
       <div class="col-sm-8 col-sm-offset-2">
 
 		<div>
-			<h3>接口和网关技术</h3>
+			<h3>网关，让蓝牙拥入互联网的怀抱</h3>
 			<hr />
 			
-			<h4 id="方案概述">概述</h4>
-			<p>接口和网关在未来的物联网时代会扮演重要的角色，它将成为连接物联网与传统通信网络的纽带。作为接口和网关，它在使用不同的通信协议、数据格式或语言，甚至体系结构之间起到翻译作用。既可以用于广域互联网，也可以用于局域互联网。此外，物联网网关还需要具备设备管理功能，运营商通过物联网网关设备可以管理物联网的各感知节点，了解各节点的相关信息，实现远程控制。</p>			
-			<img src="./images/iot_gateway.png" class="img-responsive center-block ">									
-			<hr />
 			
-			<h4 id="工作原理">JUMA的IP和服务</h4>
+			<h4>方案背景</h4>
+			<p>房东买了一个蓝牙门锁，新的租客来了，房东人在外地，怎么给租客开门？</p>
+			<p>商场里面的iBeacon设备，广播包中携带着温湿度监测数据，如何让管理员上网查看？</p>
+			<p>对于已经发售的蓝牙产品，如果出现Bug，厂商如何对其升级维护？</p>
 
-			<p>IP和服务包括：</p>
+			<p>如果能够让蓝牙设备连上互联网，这一切都会变得简单。</p>			
+			
+			<p>网关在物联网时代会扮演重要的角色，它将成为连接物联网与互联网的纽带。它在使用不同的通信协议、数据格式，甚至体系结构之间起到翻译作用。</p>			
+			<img src="./images/gateway.jpg" class="img-responsive center-block ">		
+			<br />
+	
+			<hr />
+
+			<h4>方案概述</h4>	
+			<p>JUMA推出的蓝牙网关具有以下拓扑结构：</p>	
+			
+			<img src="./images/gateway3.jpg" class="img-responsive center-block ">		
+			<br />			
+			
+			<p>从硬件上说，网关具有蓝牙4.0通信模块，2G/3G或者以太网模块。从软件上来说，网关搭载着Linux/Android操作系统，支持蓝牙4.0协议栈、TCP/IP协议栈。网关上运行的程序具有数据解析、数据中转、设备监控、设备升级维护等功能。</p>	
+			
+			<p>从部署角度来说，一般一个场景中放置一个网关，它会连接周围的蓝牙设备，管理员也可以通过配置选择与其连接的蓝牙设备。如果需要连接的设备超出了网关蓝牙信号以外，则可以通过中继器，或者建立蓝牙自组网(Mesh)等方式扩大网络的通信范围。</p>	
+			
+			<hr />			
+			
+			<h4>技术指标</h4>
 			<ul>
-			<li>2G/3G/4G移动通信网关：将蓝牙或者2.4GHz的数据通过2G/3G/4G设备上传至互联网，适用于户外场景，如农场、交通、汽车等场所。</li>
-			<li>以太网网关：将蓝牙或者2.4GHz的数据通过以太网设备上传至互联网，适用于工厂、办公楼宇等场所。</li>
-			<li>串口透传接口：将蓝牙或者2.4GHz的数据转换成通用串口数据，接入到中控设备。如果客户拥有现有产品方案，借此可以方便、快速地实现产品的改造升级。</li>			
-			</ul>
+				<li>网关支持远程后台登陆和配置；</li>
+				<li>网关支持通用数据上传云服务；</li>
+				<li>网关支持蓝牙设备空中升级(OTA)；</li>
+			</ul>			
 			<hr />
 			
-
+						
+			<h4>服务内容</h4>		
+			<ul>
+			<li>蓝牙SDK；</li>					
+			<li>网关软硬件定制和技术支持；</li>	
+			</ul>				
+			<hr />		
+			
+			<h4>方案咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
+			<hr />
+			
 		</div>
 
       </div>

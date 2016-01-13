@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>一种记录人体和动物运动状态的开发平台</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>  
+	.col-center-block {  
+	    float: none;  
+	    display: block;  
+	    margin-left: auto;  
+	    margin-right: auto;  
+	}  
+	</style>  	
+</head>
+
+
+<body>
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a href="./index.html">
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
+	</a>
+  </div>
+<!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="#section1">What</a></li>
+      <li><a href="#section2">When</a></li>
+    </ul>
+  </div>-->
+</nav>
+
+
+<section class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+		<div>
+			<h3>一种记录人体和动物运动状态的开发平台</h3>
+			<hr />
+			
+			
+			<h4>方案背景</h4>
+			<p>物联网提供了多维度的数据获取方式，这给商业带来了前所未有的价值。比如，人寿保险公司通过向投保者派送智能手环，获知他们是不是经常运动、作息是否规律等数据，继而分析出投保者的身体健康状态，调整复杂的保费计算公式，获取新的盈利增长点。</p>
+			
+			<p>现在市面上已经有不同形式的智能手环、脚环、腰带、甚至鞋子，它们都可以为商业机构提供源源不断的多维数据，那么还有什么问题需要解决呢？</p>
+			
+			<p>我们看到很多产品都是以通用性为目的设计的，老少皆宜、男女通吃。然而，很多时候，通用的产品满足不了需求，还需要我们根据特定场景重新设计，比如，一个体操老师希望看到学生每天倒立练习了多少时间，起到教学督促的目的；或者，一个养猪大户希望看到每只猪仔每天的活动量，从而打出“健康猪仔”的市场口号。</p>
+			
+			<img src="./images/motion1.jpg" class="img-responsive center-block ">
+			<br />
+			
+			<p>以上例子中，通用的智能手环测量不了一个人是否在倒立，给人用的穿戴设备也没有办法测量一只猪仔的卡路里。如果仔细分析，其中又有很大的“共性”，如底层的硬件电路、传感器驱动、单片机系统层软件、设备和APP之间的蓝牙数据接口等。而那些差异化的“个性”，则体现在例如算法、APP、云服务等方面，这些才是每个产品或者每个创业公司的核心价值。</p>
+			
+			<p>物联网中很多小众而高附加值的碎片化应用，如果每次都要从无到有的搭建这些“共性”部分，成本非常高。于是，本着避免重复“造轮子”的原则，我们开发了这么一个平台，它可以记录人体、动物等宿主的运动状态，开发者通过参数调整或者重新构建算法快速开发出自己的可穿戴产品。</p>	
+				
+			<hr />
+						
+			<h4>方案概述</h4>			
+			<p>从硬件角度说，该开发平台包含了MCU单元、蓝牙单元和三轴加速度计单元，其中MCU单元和蓝牙单元集成于主芯片Nordic nRF51822之中，三轴加速度计选用ST LIS2DH12。此外，JUMA可批量提供PCBA，用户无需亲自参与供应链管理、硬件采购、生产代工等事宜。</p>
+			
+			<img src="./images/motion2.jpg" class="img-responsive center-block ">	
+			<br />
+			
+			<p>从软件角度来说，这个平台整合了JUMA SDK，它真正意义上实现了低功耗，如果使用SDK编程框架来开发应用，理论上，一颗CR2032的纽扣电池可以为其续航1年以上。</p>
+			
+			<hr />
+			
+			<h4>效果演示</h4>
+			<p>以下展示使用该平台获取原始的三轴加速度计数据：</p>			
+			<iframe height=300 width=document.body.clientWidth src="http://player.youku.com/embed/XMTMxOTczNjkwOA==" frameborder=0 allowfullscreen></iframe>
+			
+			<h4>技术指标</h4>
+			<p>算法</p>
+			<ul>
+			<li>宿主(人体和动物)的运动状态记录算法，目前支持人体的计步、睡眠、跑步；山鸡的活动量；</li>		
+			<li>基于三轴加速度计；</li>					
+			</ul>	
+			<p>蓝牙</p>
+			<ul>
+			<li>支持蓝牙4.0(低功耗蓝牙)；</li>		
+			</ul>				
+			<p>移动端</p>
+			<ul>
+			<li>支持Android&iOS；</li>		
+			</ul>				
+			<p>功耗</p>
+			<ul>
+			<li>CR2032电池供电1年；</li>		
+			</ul>				
+			<p>硬件</p>
+			<ul>
+			<li>三轴加速度计：ST LIS2DH12；</li>		
+			<li>主芯片：Nordic nRF51822；</li>											
+			<li>尺寸: 直径24mm，高度2mm；</li>
+			<li>32-bit ARM Cortex M0 CPU；</li>	
+			<li>峰值广播电流小于10 mA @ 3V；</li>		
+			<li>详细规格：<a href="http://www.juma.io/spec/smp.pdf">smp.pdf</a>；</li>					
+			</ul>										
+			<hr />
+			
+						
+			<h4>服务内容</h4>		
+			<p>软件</p>
+			<ul>
+			<li>JUMA SDK，及其编程规范</li>		
+			<li>基础的运动状态记录算法，及其使用说明</li>		
+			<li>嵌入式和移动端(Android&iOS)的演示程序</li>
+			<li>通用云服务数据存取接口</li>			
+			</ul>	
+			<p>硬件</p>
+			<ul>
+			<li>PCBA成品</li>						
+			</ul>			
+			<p>售后</p>
+			<ul>
+			<li>6个月技术支持</li>						
+			</ul>				
+			<hr />			
+			
+			
+			<h4>方案咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
+			<hr />
+			
+		</div>
+
+      </div>
+    </div>
+    
+
+    
+
+
+
+      </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- script references -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>微信摇一摇，摇出你礼品的故事</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>  
+	.col-center-block {  
+	    float: none;  
+	    display: block;  
+	    margin-left: auto;  
+	    margin-right: auto;  
+	}  
+	</style>  	
+</head>
+
+
+<body>
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a href="./index.html">
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
+	</a>
+  </div>
+<!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="#section1">What</a></li>
+      <li><a href="#section2">When</a></li>
+    </ul>
+  </div>-->
+</nav>
+
+
+<section class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+		<div>
+			<h3>微信摇一摇，摇出你礼品的故事</h3>
+			<hr />
+			
+			
+			<h4>方案概述</h4>
+			<p>送礼，就像是拍悬疑片。有时，你买了99颗玫瑰，对方觉得你只是路边摊上随手一买；有时，你买了L'Artisan Parfumeur的香水，对方说我还是喜欢香奈儿；有时，你买了维多利亚的秘密，对方发现你size买小了。。。对方收到礼品时小脸上洋溢的笑容和和你花的金钱并不一定成正向关系，在这确定和不确定之间就是门艺术。其实，送礼的关键在于“诚意”二字，让对方知道在这冷漠的世界里，有一个人一直关心着ta惦记着ta，愿意为ta花费心思，是一件多么温暖的事情。</p>
+
+			<p>电子贺卡是一个好东西，相比传统的纸质贺卡，它能做出漂亮的光影效果，然而，更受人欢迎的是——它能播放照片。一张又一张的照片，记录着你和对方的点点滴滴，那时并肩散步在湖畔的ta，和你共同打伞的ta，亦或是拥有拙劣厨艺的ta。。。随着照片的滚动，人也慢慢地陷入了美好的回忆，不由觉得这人生，真是值得一过。</p>
+			
+			<p>要是随同礼品赠送的，不是小小一张的纸质贺卡，而是充满回忆的电子贺卡就好了，让对方浓烈感受到你的用心良苦和温馨浪漫。</p>
+			
+			<p>如今，多亏有了iBeacon技术和“微信摇一摇”，让你的礼品可以做成这样。iBeacon通过低功耗蓝牙4.0技术，向四周发送消息。而微信在摇一摇的时候，可以接受iBeacon的推送消息。如果这个推送消息是一个网页(如电子贺卡)，就可以在微信里面展现出来。下面分享一个案例。</p>			
+			<hr />
+
+			<h4>成功案例</h4>		
+			
+			<p>查尔斯(化名)是我们的一个男性朋友，今年他32岁了。对于程序猿来说，16、32、64、128都是值得纪念的大寿，我们为他定制了一款程序猿才懂的蛋糕：</p>	
+			<img src="./images/present1.jpg" class="img-responsive center-block ">
+			<br />
+			<p>查尔斯和我们共同成长和进步的日子追溯到十多年前，对于这份革命友谊，我们为他做了一份电子贺卡：</p>
+			<img src="./images/present2.jpg" class="img-responsive center-block ">
+			<p>电子贺卡的网页见：<a href="http://x.eqxiu.com/s/orG72EyT">http://x.eqxiu.com/s/orG72EyT</a></p>	
+			
+			<p>我们将iBeacon设备关联到该网页(方法见“<a href="./ibeacon_cfg.html">让iBeacon设备轻松支持微信摇一摇·周边</a>”)，并随蛋糕一同赠送给他。</p>
+
+			<p>当天，我们为查尔斯祝寿，他用微信摇一摇欣赏了这部“革命友谊的见证”，非常滴高兴。事实上，他回家之后，仍然一遍又一遍摇一摇出这个电子贺卡来观摩，他说“没想到兄弟们过生日也能过的这么的浪漫。”这全都是iBeacon加上微信摇一摇的功劳：</p>
+			<img src="./images/present4.png" class="img-responsive center-block ">
+			<br />
+			
+			<p>其实，如果贴一个网页的二维码在蛋糕盒子上，通过微信的“扫一扫”也能展示这个电子贺卡，似乎更为方便快捷。但是，关于人性有趣的地方在于，事实证明，消费者会更喜欢摇一摇，这个动作也许更费力，但更带劲，更欢乐。</p>
+			<p>最后，附上当天的二逼合影：</p>
+			<img src="./images/present5.jpg" class="img-responsive center-block ">
+			<br />
+			
+			<hr />			
+			
+			<h4>技术指标</h4>
+			<ul>
+			<li>iBeacon信号范围：10~20米以内；</li>
+			<li>iBeacon设备尺寸：32mm*32mm*6mm；</li>			
+			<li>iBeacon硬件规格：<a href="./files/iBeacon.pdf">iBeacon.pdf</a>；</li>			
+			<li>支持Android和iOS等移动设备；</li>
+			<li>支持"微信摇一摇·周边"；</li>
+			</ul>
+			<hr />
+			
+			<h4>服务内容</h4>
+			<ul>
+			<li>提供iBeacon成品；</li>
+			<li>提供iBeacon配置助手APP；</li>			
+			<li>提供iBeacon礼品策划服务(可选)；</li>									
+			<li>提供"易企秀"网页制作服务(可选)；</li>			
+			</ul>
+			<hr />			
+			
+			<h4>方案咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
+			<hr />
+			
+		</div>
+
+      </div>
+    </div>
+    
+
+    
+
+
+
+      </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- script references -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
