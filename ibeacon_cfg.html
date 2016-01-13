@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>让iBeacon设备轻松支持"微信摇一摇·周边"</title>
+	<meta name="generator" content="Bootply" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<link href="css/styles.css" rel="stylesheet">
+	<style>  
+	.col-center-block {  
+	    float: none;  
+	    display: block;  
+	    margin-left: auto;  
+	    margin-right: auto;  
+	}  
+	</style>  	
+</head>
+
+
+<body>
+<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+  <div class="container">
+	<a href="./index.html">
+	    <h4 class="text-center">JUMA物联网基础软件架构</h4>
+	</a>
+  </div>
+<!--  <div class="navbar-collapse collapse" id="navbar-collapsible">
+    <ul class="nav navbar-nav navbar">
+      <li><a href="#section1">What</a></li>
+      <li><a href="#section2">When</a></li>
+    </ul>
+  </div>-->
+</nav>
+
+
+<section class="container-fluid" id="section4">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+		<div>
+			<h3>让iBeacon设备轻松支持"微信摇一摇·周边"</h3>
+			<hr />
+			
+			<h4>导读</h4>
+			<p>iBeacon基于最新的蓝牙低功耗4.0技术，可以用来打造一个信号基站，当用户持有移动设备（智能手机、平板电脑等）进入该区域时（一般10~20米以内），就会得到获得该iBeacon的推送信息：</p>
+			<img src="./images/ibeacon2.png" class="img-responsive center-block ">
+			<p>举个例子，某品牌时装专卖店里面部署着iBeacon设备，用户带着智能手机进入店铺时，智能手机就可以检测到来自iBeacon的推送消息。这些消息可以是一件衣服的设计说明、或是衣物的搭配指南、或是优惠折扣等信息，这给用户购物增加了一种全新的体验。</p>
+			<p>把iBeacon用起来有两个前提条件：一是部署iBeacon设备，二是用户安装了支持这个iBeacon的APP。然而大家知道，现在让用户装一个新的APP是多么困难的一件事，要是有一个巨无霸APP支持iBeacon就好了。好在，微信就已经干了这件事。</p>
+			<p>微信从6.1版本推出"摇一摇·周边"功能，支持iBeacon设备。用户在开启手机蓝牙的状态下，进入微信摇一摇菜单，摇一摇手机，如果此时附近有iBeacon设备，就会自动出现周边入口，用户点击后，微信就会打开商家预定义的网页：</p>
+			<img src="./images/ibeacon3.jpg" class="img-responsive center-block ">
+			
+			<br />
+			<p>基于以上介绍，相信大家对iBeacon和"微信摇一摇·周边"有了一定了解。具体操作起来，有以下一番步骤：</p>
+			<ul>
+			<li>1. 制作摇一摇网页，如商品展示、折扣优惠、投票签到等；</li>
+			<li>2. 登录"微信摇一摇·周边"后台，申请iBeacon的ID；</li>			
+			<li>3. 购买iBeacon设备，将ID烧入到iBeacon设备</li>			
+			<li>4. 登录"微信摇一摇·周边"后台，配置iBeacon设备和网页的关联关系；</li>
+			<li>5. 部署iBeacon设备，如放置在店铺或者贴附在商品上；</li>			
+			<li>6. 完工，可以开始微信摇一摇了</li>			
+			</ul>			
+			
+			<p>上述步骤具有需要一定知识储备，特别是涉及"微信摇一摇·周边"的操作，这里让我们瞻仰一下它的后台管理界面：</p>
+			<img src="./images/ibeacon5.png" class="img-responsive center-block ">
+
+			<br />			
+			<p>很多用户使用下来表示波费周折，煞费脑细胞。为此，我们推出一种使用APP配置iBeacon的简易方案，让您无需操作微信后台，就可以轻松方便地配置好iBeacon设备。</p>			
+			<hr />
+			
+			<h4>方案概述</h4>
+			<p>本方案使用的iBeacon设备由JUMA提供，已经为用户烧录好了ID，这个ID由微信分配，用户不需要关心其数值。</p>
+			<p>默认情况下，和iBeacon设备ID关联的网页是JUMA微信公众号。</p>
+
+			<p>接着，用户可以制作自己的展示网页。在这里以"易企秀"为例为大家介绍，它是一个手机网页DIY制作工具，像电子贺卡、活动报名、商品介绍等都很容易制作，做好之后得到一个网页的网址或者二维码，如下所示：</p>
+			<img src="./images/ibeacon7.png" class="img-responsive center-block ">
+			<br />			
+			
+			<p>用户从AppStore或者应用宝下载并安装JUMA的"iBeacon配置助手"。</p>
+			<p>将手机靠近iBeacon设备，APP便会扫描到设备，并进入设备的配置界面：</p>
+			<img src="./images/ibeacon6.png" class="img-responsive center-block ">
+			<br />			
+						
+			<p>此时，将网页的标题、网址等输入APP，APP会和微信后台服务器交互信息，这样就把iBeacon设备的ID和网页关联起来了。</p>
+			<hr />
+			
+			
+			<h4>方案特点</h4>
+			<ul>
+			<li>用户无需创建"微信摇一摇·周边"账户，或者登录其后台管理界面</li>
+			<li>用户无需了解iBeacon UUID、Major、Minor、"微信摇一摇·周边"等相关概念</li>
+			<li>用户借助"易企秀"等工具制作一个网页</li>
+			<li>用户通过"iBeacon配置助手"APP配置iBeacon及其网页的关联关系</li>
+			</ul>
+			<hr />
+			
+			<h4>技术指标</h4>
+			<ul>
+			<li>iBeacon信号范围：10~20米以内；</li>
+			<li>iBeacon设备尺寸：32mm*32mm*6mm；</li>			
+			<li>iBeacon硬件规格：<a href="./files/iBeacon.pdf">iBeacon.pdf</a>；</li>			
+			<li>支持Android和iOS等移动设备；</li>
+			<li>支持"微信摇一摇·周边"；</li>
+			</ul>
+			<hr />
+			
+			<h4>服务内容</h4>
+			<ul>
+			<li>提供iBeacon成品；</li>
+			<li>提供iBeacon配置助手APP；</li>			
+			<li>提供"易企秀"网页制作服务(可选)；</li>			
+			</ul>
+			<hr />			
+			
+			<h4>方案咨询</h4>
+			<p>请发邮件至<a href=mailto:hello@jumacc.com>hello@jumacc.com</a>，客服人员会和您联系。</p>
+			<hr />
+			
+
+			
+		</div>
+
+      </div>
+    </div>
+    
+
+    
+
+
+
+      </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- script references -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
